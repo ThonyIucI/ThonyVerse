@@ -1,0 +1,11 @@
+.bodi {
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(42, 161, 195);
+  background: radial-gradient(
+    circle,
+    rgba(42, 161, 195, 1) 14%,
+    rgba(17, 113, 238, 1) 52%,
+    rgba(68, 59, 207, 1) 100%
+  );
+}
