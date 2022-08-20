@@ -1,10 +1,4 @@
-import {
-  useCallback,
-  useEffect,
-  useLayoutEffect,
-  useRef,
-  useState,
-} from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import {
   Box,
@@ -15,14 +9,10 @@ import {
 } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
-import { Bloom, EffectComposer, GodRays } from "@react-three/postprocessing";
-import { BlendFunction, Resizer, KernelSize } from "postprocessing";
 import { useSpring, animated } from "@react-spring/three";
 
 import TextMesh from "./TextMesh";
 import gsap from "gsap";
-import SvgModel from "./SvgModel";
-import { contacts } from "./Content/contact";
 import Children from "./Children";
 import { handleGoInto } from "./Content/functions";
 

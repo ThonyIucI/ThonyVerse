@@ -2,7 +2,7 @@ import { useFrame } from "@react-three/fiber";
 import { Box, Html, useTexture } from "@react-three/drei";
 import { useRef, useState } from "react";
 import TextMesh from "./TextMesh";
-import Router from "next/router";
+
 
 export default function InterestModel(p) {
   const refContact = useRef(),

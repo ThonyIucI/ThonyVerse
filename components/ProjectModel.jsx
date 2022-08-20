@@ -1,6 +1,6 @@
 import { useFrame, useLoader } from "@react-three/fiber";
 import { Box, Cylinder, useTexture } from "@react-three/drei";
-import { Suspense, useRef, useState } from "react";
+import {  useRef, useState } from "react";
 
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 import TextMesh from "./TextMesh";

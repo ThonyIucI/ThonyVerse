@@ -1,6 +1,5 @@
-import styles from "../styles/Home.module.scss";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls, Stars } from "@react-three/drei";
+import { useFrame, useThree } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 import { gems } from "../components/Content/gems";
 import Gem from "../components/Gem";
 import { useEffect, useRef, useState } from "react";
