@@ -32,3 +32,15 @@ export function handleGoInto(e) {
     ease: "circ.out",
   });
 }
+// function animateIntro() {
+//   const tl = gsap.timeline();
+//   tl.fromTo(
+//     refImage,
+//     { opacity: 0, y: -20 },
+//     { opacity: 1, y: 0, ease: "power3.inOut", duration: 1.5 }
+//   ).to(
+//     refText,
+//     { opacity: 0, x: 30 },
+//     { opacity: 1, x: 0, ease: "power3.inOut", duration: 1.5 }
+//   );
+// }

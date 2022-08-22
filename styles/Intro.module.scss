@@ -1,7 +1,270 @@
-.image {
-  position: fixed;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$small: 300px;
+$medium: 1000px;
+$big: 963px;
+$orange: #df681b;
+$green: #01d06b;
+$blue: #1171ee;
+$yellow: #e5b93e;
+$red: #fd0114;
+$purple: #ba18ea;
+$black: #0b0d21;
+// Button
 
+$font-size: 30pt;
+$font-color: rgba(256, 256, 256, 1);
+$button-color: rgba(0, 0, 0, 1);
+$button-color-border: rgba(0, 0, 0, 0.7);
+$button-color-shadow: rgba(0, 0, 0, 0.5);
+$gradient: linear-gradient(
+  179.4deg,
+  rgb(12, 14, 36) -16.9%,
+  rgba(12, 4, 15, 0.889) 119.9%
+);
+.global {
+  // display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
+  // overflow-y: scroll;
+  // scroll-snap-type: y mandatory;
+  // background-color: transparent;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  .container {
+    height: 100vh;
+    // width: 100%;
+    padding: 3% 4%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .section {
+      display: flex;
+      margin: 4% 6%;
+      // width: 100%;
+      height: 92%;
+
+      align-content: center;
+      justify-content: space-around;
+      border-radius: 40px;
+      flex-wrap: wrap;
+      border: 1px solid $green;
+      // background: $gradient;
+      @media screen and (max-width: $medium) {
+        align-content: space-around;
+      }
+      .image {
+        height: auto;
+        width: auto;
+        // @media screen and (max-width: $small) {
+        //   //do Smth
+        //   height: 200;
+        //   width: 200;
+        // }
+        @media screen and (min-width: $medium) {
+          height: 300;
+          width: 300;
+        }
+      }
+      .text {
+        border: 1px dashed $blue;
+        border-radius: 20px;
+        margin: 5px;
+        padding: 10px 3%;
+        width: 40%;
+        color: $blue;
+        font-family: "roboto", serif;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        background: $gradient;
+
+        @media screen and (max-width: $medium) {
+          gap: 10px;
+          width: 80%;
+        }
+        .lyrics {
+          display: flex;
+          align-content: space-around;
+          flex-direction: column;
+          height: 100%;
+          font-weight: bold;
+          //   background-color: white;
+          @media screen and (min-width: $medium) {
+            gap: 10px;
+          }
+          .intro {
+            font-size: 20px;
+            @media screen and (min-width: $big) {
+              font-size: 30px;
+            }
+          }
+          .name {
+            font-size: 50px;
+
+            @media screen and (min-width: 1218px) {
+              font-size: 100px;
+            }
+            @media screen and (max-width: $medium) {
+              font-size: 40px;
+            }
+          }
+          .description {
+            font-size: 20px;
+            color: rgb(128, 191, 26);
+            color: $green;
+            @media screen and (min-width: $big) {
+              font-size: 30px;
+            }
+          }
+        }
+        .but {
+          border-radius: 25px;
+          width: 200px;
+          align-self: center;
+          justify-self: flex-end;
+          font-family: "roboto", sans-serif;
+          // font-weight: bold;
+          color: wheat;
+          background-color: $blue;
+          display: flex;
+          justify-content: center;
+          padding: 5px;
+          margin-top: 5px;
+          bottom: 20px;
+          //   border: 1px solid black;
+
+          @media screen and (max-width: $medium) {
+            width: 100%;
+            padding: 2px;
+            margin-top: 2px;
+            font-size: 18px;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            margin-top: 10px;
+          }
+        }
+        .but:hover {
+          background-color: $green;
+          //   border: 1px solid $blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+// .image {
+//   height: 500;
+//   width: 500;
+//   @media screen and (max-width: $small) {
+//     //do Smth
+//     height: 200;
+//     width: 200;
+//   }
+//   @media screen and (min-width: $medium) {
+//     //do Smth
+//   }
+// }
+// .text {
+//   margin: 5px;
+//   padding: 10px 3%;
+//   width: 50%;
+//   color: $blue;
+//   font-family: "roboto", serif;
+//   display: flex;
+//   align-content: center;
+//   justify-content: center;
+//   flex-direction: column;
+
+//   // border-radius: 30px;
+//   // background: linear-gradient(
+//   //   179.4deg,
+//   //   rgb(12, 14, 36) -16.9%,
+//   //   rgba(12, 4, 15, 0.889) 119.9%
+//   // );
+//   // border: 1px solid $green;
+//   @media screen and (max-width: $medium) {
+//     gap: 10px;
+//     width: 80%;
+//   }
+//   .lyrics {
+//     display: flex;
+//     align-content: space-around;
+//     flex-direction: column;
+//     height: 100%;
+//     font-weight: bold;
+//     //   background-color: white;
+//     @media screen and (min-width: $medium) {
+//       gap: 10px;
+//     }
+//     .intro {
+//       font-size: 20px;
+//       @media screen and (min-width: $big) {
+//         font-size: 30px;
+//       }
+//     }
+//     .name {
+//       font-size: 50px;
+
+//       @media screen and (min-width: $big) {
+//         font-size: 100px;
+//       }
+//       @media screen and (max-width: $medium) {
+//         font-size: 40px;
+//       }
+//     }
+//     .description {
+//       font-size: 20px;
+//       color: rgb(128, 191, 26);
+//       color: $green;
+//       @media screen and (min-width: $big) {
+//         font-size: 30px;
+//       }
+//     }
+//   }
+//   .but {
+//     border-radius: 25px;
+//     width: 200px;
+//     align-self: center;
+//     justify-self: flex-end;
+//     font-family: "roboto", sans-serif;
+//     // font-weight: bold;
+//     color: wheat;
+//     background-color: $blue;
+//     display: flex;
+//     justify-content: center;
+//     padding: 5px;
+//     margin-top: 5px;
+//     bottom: 20px;
+//     //   border: 1px solid black;
+//     @media screen and (max-width: $medium) {
+//       width: 100%;
+//       padding: 2px;
+//       margin-top: 2px;
+//       font-size: 18px;
+//       display: flex;
+//       align-self: center;
+//       justify-self: center;
+//     }
+//   }
+//   .but:hover {
+//     background-color: $green;
+//     //   border: 1px solid $blue;
+//     cursor: pointer;
+//   }
+// }
 .bodi {
   height: 100vh;
   overflow: hidden;
@@ -12,4 +275,108 @@
     rgba(17, 113, 238, 1) 52%,
     rgba(68, 59, 207, 1) 100%
   );
+}
+.button {
+  // border-radius: 25px;
+  // width: 120px;
+
+  align-self: center;
+  justify-self: flex-end;
+  font-family: "roboto", sans-serif;
+  color: #ffffff;
+  display: block;
+  background: $button-color;
+  padding: 10px;
+  position: relative;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+  box-shadow: -20px 20px 10px $button-color-shadow;
+  transition: all 0.5s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    left: -20px;
+    top: 10px;
+    background: $button-color-border;
+    transform: rotate(0deg) skewY(-45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    transform: rotate(0deg) skewX(-45deg);
+    background: $button-color-border;
+    transform: rotate(45deg) scewY(-45deg);
+  }
+
+  &:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg)
+      translate(2px, -2px);
+    box-shadow: -50px 50px 30px $button-color-shadow;
+    cursor: pointer;
+  }
+}
+.a {
+  text-decoration: none;
+  border: 3px solid yellow;
+  padding: 20px;
+  font-size: 18px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+  position: relative;
+}
+.a:before {
+  content: "START";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  background: rgb(34, 34, 34);
+  font-size: 28px;
+  top: 0;
+  left: 100%;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(0) rotatey(0);
+  opacity: 0;
+}
+.a:hover:before {
+  transform: scale(1) rotatey(360deg);
+  left: 0;
+  opacity: 1;
+}
+.a:after {
+  content: "START";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  background: rgb(34, 34, 34);
+  font-size: 28px;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+  transition: all 1s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1) rotatey(0);
+  opacity: 1;
+}
+.a:hover:after {
+  transform: scale(0) rotatey(360deg);
+  left: -100%;
+  opacity: 0;
 }

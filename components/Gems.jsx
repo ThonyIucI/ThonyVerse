@@ -1,5 +1,4 @@
 import { useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
 import { gems } from "../components/Content/gems";
 import Gem from "../components/Gem";
 import { useEffect, useRef, useState } from "react";
@@ -66,12 +65,6 @@ function Gems(p) {
           />
         ))}
       </instancedMesh>
-
-      <OrbitControls
-        maxPolarAngle={2 * Math.PI}
-        // autoRotate={selected.active ? true : false}
-        // rotateSpeed={0.0005}
-      />
     </>
   );
 }

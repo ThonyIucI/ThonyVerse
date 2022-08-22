@@ -49,9 +49,9 @@ function Children(p) {
         { array: skillsEngineering, colorRing: "#FD0114", radius: 25 },
         { array: skillsFrontend, colorRing: "#FD0114", radius: 40 },
       ];
-      return sills?.map((e) => (
+      return sills?.map((e, i) => (
         <SkillSection
-          key={e.name}
+          key={i}
           {...e}
           active={p.active}
           setActive={p.setActive}
