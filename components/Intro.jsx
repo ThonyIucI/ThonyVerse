@@ -25,7 +25,7 @@ function Intro({ click, setClick, camera }) {
       let size;
       if (typeof window !== "undefined") size = window.innerWidth;
 
-      if (size < 300) return 120;
+      if (size < 300) return 200;
       if (size < 600) {
         return 300;
       } else {
@@ -34,7 +34,7 @@ function Intro({ click, setClick, camera }) {
     },
     [windowSize, setWindowSize] = useState(getSize());
   function handleClick(e) {
-    console.log(e);
+    // console.log(e);
     setClick(!click);
     gsap.to(camera.position, {
       x: 0,
@@ -44,7 +44,7 @@ function Intro({ click, setClick, camera }) {
       ease: "circ.out",
     });
   }
-  console.log(windowSize);
+  // console.log(windowSize);
   useEffect(() => {
     const totalPanels = panels.current.length;
 

@@ -12,12 +12,12 @@ export const N = {
 // console.log(N);
 ("naranja-cerde-azul,amarillo,rojo-lila");
 let logos = [
-  {
-    name: "Snapchat",
-    link: "https://github.com/thonyiuci",
-    color: N.yellow,
-    path: "/logosSVG/snapchat.svg",
-  },
+  // {
+  //   name: "Snapchat",
+  //   link: "https://github.com/thonyiuci",
+  //   color: N.yellow,
+  //   path: "/logosSVG/snapchat.svg",
+  // },
   {
     name: "GitHub",
     link: "https://github.com/thonyiuci",

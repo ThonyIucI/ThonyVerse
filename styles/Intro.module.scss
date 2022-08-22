@@ -42,17 +42,17 @@ $gradient: linear-gradient(
 
   .container {
     height: 100vh;
-    // width: 100%;
-    padding: 3% 4%;
+    width: 100%;
+    // padding: 3% 4%;
     display: flex;
     justify-content: center;
     align-content: center;
 
     .section {
       display: flex;
-      margin: 4% 6%;
-      // width: 100%;
-      height: 92%;
+      margin: 4% 3%;
+      width: 100%;
+      height: 90%;
 
       align-content: center;
       justify-content: space-around;
@@ -144,7 +144,16 @@ $gradient: linear-gradient(
           margin-top: 5px;
           bottom: 20px;
           //   border: 1px solid black;
-
+          @media screen and (max-width: $small) {
+            width: 100%;
+            padding: 2px;
+            margin-top: 2px;
+            font-size: 18px;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            margin-top: 10px;
+          }
           @media screen and (max-width: $medium) {
             width: 100%;
             padding: 2px;
@@ -154,6 +163,16 @@ $gradient: linear-gradient(
             align-self: center;
             justify-self: center;
             margin-top: 10px;
+          }
+          @media screen and (min-width: 1218px) {
+            width: 50%;
+            padding: 5px;
+            margin-top: 5px;
+            font-size: 26px;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            margin-top: 20px;
           }
         }
         .but:hover {
